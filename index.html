@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Brian's Occult Library — an independent archive of Hermetic philosophy, ancient religion, symbolism, and esoteric writings.">
+<title>Brian's Occult Library</title>
+<style>
+:root {
+  --bg: #071426;
+  --panel: #102544;
+  --gold: #D4AF37;
+  --text: #FFFFFF;
+  --muted: #C3D0E2;
+  --line: #29466B;
+}
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.7;
+}
+a { color: var(--gold); text-decoration: none; }
+a:hover { color: #f2d9a1; }
+header {
+  padding: 20px 7%;
+  border-bottom: 1px solid var(--line);
+  display: flex; justify-content: space-between;
+  align-items: center; gap: 20px; flex-wrap: wrap;
+}
+.brand { color: var(--gold); font-size: 19px; letter-spacing: 2px; }
+nav { display: flex; gap: 22px; flex-wrap: wrap; font-size: 13px; }
+nav a { color: var(--text); }
+.hero {
+  min-height: 490px;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  text-align: center; padding: 75px 8%;
+  background: radial-gradient(ellipse at center, #302517 0%, #15110d 43%, #0d0c0b 76%);
+  border-bottom: 1px solid var(--line);
+}
+.symbol { color: var(--gold); font-size: 65px; line-height: 1.2; }
+.eyebrow { color: var(--gold); letter-spacing: 4px; font-size: 11px; text-transform: uppercase; }
+h1 { font-size: clamp(37px, 7vw, 66px); font-weight: normal; line-height: 1.1; margin: 18px 0; }
+.hero p { max-width: 620px; color: var(--muted); }
+.button {
+  display: inline-block; border: 1px solid var(--gold);
+  padding: 11px 22px; margin-top: 18px;
+  letter-spacing: 1px; font-size: 12px; text-transform: uppercase;
+}
+section { padding: 70px 8%; max-width: 1250px; margin: auto; }
+.section-head { text-align: center; margin-bottom: 35px; }
+h2 { font-weight: normal; font-size: 32px; margin: 8px 0; }
+.section-head p { color: var(--muted); }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 17px; }
+.card {
+  background: var(--panel); border: 1px solid var(--line);
+  padding: 25px; transition: border-color .2s, transform .2s;
+}
+.card:hover { border-color: var(--gold); transform: translateY(-3px); }
+.card .icon { font-size: 30px; color: var(--gold); }
+.card h3 { font-size: 21px; font-weight: normal; margin: 10px 0; }
+.card p { font-size: 14px; color: var(--muted); }
+.card a { font-size: 12px; letter-spacing: 1px; text-transform: uppercase; }
+.feature {
+  border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
+  background: #12100e; max-width: none;
+}
+.feature-inner { max-width: 1050px; margin: auto; }
+blockquote {
+  margin: 25px 0; padding-left: 22px;
+  border-left: 2px solid var(--gold); color: var(--muted);
+  font-size: 20px; font-style: italic;
+}
+footer { text-align: center; padding: 35px 8%; border-top: 1px solid var(--line); color: var(--muted); font-size: 12px; }
+footer .brand { margin-bottom: 8px; }
+@media(max-width:600px) {
+  header { justify-content: center; }
+  nav { justify-content: center; gap: 13px; }
+  .hero { min-height: 420px; }
+  section { padding: 50px 6%; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <a class="brand" href="#">BRIAN'S OCCULT LIBRARY</a>
+  <nav>
+    <a href="#library">The Library</a>
+    <a href="#traditions">Traditions</a>
+    <a href="#writings">Writings</a>
+    <a href="#about">About</a>
+  </nav>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="symbol">𓂀</div>
+    <div class="eyebrow">An Independent Archive of Esoteric Knowledge</div>
+    <h1>Beyond the<br>Visible World</h1>
+    <p>A study of ancient wisdom, sacred symbolism, Hermetic philosophy, and the enduring human search for knowledge.</p>
+    <a class="button" href="#library">Enter the Library</a>
+  </div>
+
+  <section id="library">
+    <div class="section-head">
+      <div class="eyebrow">Explore the Archive</div>
+      <h2>The Library</h2>
+      <p>Explore traditions, texts, and ideas that have shaped humanity's inner life.</p>
+    </div>
+    <div class="grid">
+      <article class="card">
+        <div class="icon">𓁹</div>
+        <h3>Ancient Egypt</h3>
+        <p>Explore Egyptian deities, temple symbolism, creation myths, and the mysteries of the afterlife.</p>
+        <a href="#egypt">Explore Egypt →</a>
+      </article>
+      <article class="card">
+        <div class="icon">☿</div>
+        <h3>Hermeticism</h3>
+        <p>Study Hermes Trismegistus, Hermetic writings, alchemy, and the relationship between mind and cosmos.</p>
+        <a href="#hermeticism">Explore Hermeticism →</a>
+      </article>
+      <article class="card">
+        <div class="icon">✧</div>
+        <h3>Kabbalah & Mysticism</h3>
+        <p>Approach mystical traditions, the Tree of Life, and the symbolic language of spiritual literature.</p>
+        <a href="#kabbalah">Explore Mysticism →</a>
+      </article>
+      <article class="card">
+        <div class="icon">☉</div>
+        <h3>Alchemy & Symbolism</h3>
+        <p>Investigate alchemical emblems, sacred geometry, and the meanings attributed to ancient symbols.</p>
+        <a href="#alchemy">Explore Symbols →</a>
+      </article>
+      <article class="card">
+        <div class="icon">☽</div>
+        <h3>Gnosticism</h3>
+        <p>Discover Gnostic movements, their cosmologies, and writings preserved from the ancient world.</p>
+        <a href="#gnosticism">Explore Gnosticism →</a>
+      </article>
+      <article class="card">
+        <div class="icon">✦</div>
+        <h3>Books & Primary Texts</h3>
+        <p>Build a reading room of historical works, public-domain books, translations, and study resources.</p>
+        <a href="#texts">Browse Texts →</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="feature" id="about">
+    <div class="feature-inner">
+      <div class="eyebrow">The Purpose</div>
+      <h2>Knowledge Before Assumption</h2>
+      <blockquote>
+        “The beginning of wisdom is the definition of terms.”
+      </blockquote>
+      <p>This library is a place for independent study, careful reading, and the comparison of ideas across cultures and centuries. Historical evidence, traditional teachings, and modern interpretations deserve to be examined on their own terms.</p>
+      <p>Esoteric ideas can inspire profound questions. They should also invite curiosity, context, and critical thought.</p>
+    </div>
+  </section>
+
+  <section id="traditions">
+    <div class="section-head">
+      <div class="eyebrow">Paths of Inquiry</div>
+      <h2>Study by Tradition</h2>
+    </div>
+    <div class="grid">
+      <article class="card" id="egypt">
+        <h3>Egyptian Religion</h3>
+        <p>Ma'at, Thoth, Isis, Osiris, Ra, and the symbolic world of ancient Egypt.</p>
+      </article>
+      <article class="card" id="hermeticism">
+        <h3>The Hermetic Tradition</h3>
+        <p>The Corpus Hermeticum, Renaissance Hermeticism, and the history of occult philosophy.</p>
+      </article>
+      <article class="card" id="kabbalah">
+        <h3>Kabbalistic Thought</h3>
+        <p>The Sephirot, foundational texts, and the historical development of Jewish mysticism.</p>
+      </article>
+      <article class="card" id="alchemy">
+        <h3>Alchemical Imagery</h3>
+        <p>Transformation, the elements, planetary symbols, and the history of alchemical practice.</p>
+      </article>
+      <article class="card" id="gnosticism">
+        <h3>Gnostic Writings</h3>
+        <p>Ancient texts, diverse Gnostic movements, and debates about knowledge and salvation.</p>
+      </article>
+      <article class="card" id="texts">
+        <h3>Reading Room</h3>
+        <p>Find public-domain editions and reputable digital archives for further study.</p>
+        <a href="https://www.gutenberg.org/" target="_blank" rel="noopener noreferrer">Project Gutenberg →</a>
+        <br><br>
+        <a href="https://archive.org/" target="_blank" rel="noopener noreferrer">Internet Archive →</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="writings">
+    <div class="section-head">
+      <div class="eyebrow">Original Work</div>
+      <h2>Notes from the Study</h2>
+      <p>Essays, research notes, and personal reflections on the search for wisdom.</p>
+    </div>
+    <div class="card">
+      <h3>The Search for Hidden Meaning</h3>
+      <p>This section is reserved for original essays and research. New writing will be added as the library grows.</p>
+      <p><em>Coming soon — original articles by Brian.</em></p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="brand">BRIAN'S OCCULT LIBRARY</div>
+  <p>An independent project dedicated to reading, research, and thoughtful inquiry.</p>
+  <p>Historical study is distinguished here from personal interpretation and unverified claims.</p>
+  <p>© 2026 Brian's Occult Library</p>
+</footer>
+
+</body>
+</html>
